@@ -2,3 +2,141 @@
     margin: 0px;
     padding: 0px;
 }
+
+
+body
+{
+    display:flex;
+    padding-top: 2vh;
+    background-color: rgba(128, 128, 128, 0.158);
+}   
+
+
+.sidebar
+{
+    padding-inline: 2vw;
+    padding-block: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+    width: 20%;
+}
+
+.colab-line
+{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.colab
+{
+    display: flex;
+    align-items: center;
+}
+
+.colab>img{
+    width: 3vw;
+}
+
+
+.search
+{
+    width: 100%;
+    height: 5%;
+}
+
+.access
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.access-button  
+{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 0.5vw;
+    padding-block: 3%;
+
+    background-color: transparent;
+    border: none;
+}
+
+.access-button-name
+{
+    display: flex;
+    gap: 0.5vw;
+}
+
+.beta
+{
+    padding-inline: 0.5vw;
+    padding-block: 0.25vh;
+    background-color: white;
+}
+
+.access-button-number
+{
+    background-color: rgb(231, 28, 21);
+    padding-inline: 0.5vw;
+    padding-block: 0.25vh;
+    border-radius: 5px;
+    color: white;
+}
+
+
+
+.group
+{
+    display: flex;
+    flex-direction: column;
+    gap:1vh;
+}
+
+.my-group
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.group-button{
+    padding-inline: 1vw;
+    padding-block: 1vh;
+
+    display: flex;
+    align-items: self-start;
+    border: none    ;
+}
+
+button:hover
+{
+    background-color: rgba(255, 255, 255, 0.514);
+    box-shadow: -6px 3px 5px black;
+}
+
+button:active
+{
+    background-color: white;
+}
+
+.side-bottom
+{
+    display: flex;
+    flex-direction: column;
+}
+
+ul
+{
+    list-style: none;
+
+}
+
+li
+{
+    display: flex;
+    gap: 0.5vw;
+}
