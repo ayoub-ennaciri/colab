@@ -19,7 +19,11 @@ body
     display: flex;
     flex-direction: column;
     gap:3vh;
-    width: 20%;
+    width: 100%;
+}
+
+.sidebox{
+    display: none;
 }
 
 .colab-line
@@ -28,7 +32,7 @@ body
     justify-content: space-between;
     /* background-color: red; */
     align-items: center;
-    margin-bottom: 5vh;
+    
 }
 
 .colab
@@ -139,4 +143,179 @@ li
 {
     display: flex;
     gap: 0.5vw;
+}
+
+
+
+
+
+/* the table side style */
+
+
+.partners
+{
+    background-color: whitesmoke;
+    width: 70%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+
+}
+
+.all-partners-group
+{
+    display: flex;
+    justify-content: space-between; 
+    gap: 1vw;
+}
+
+.gg 
+{
+    display: flex;
+    gap: 13vw;
+    flex-wrap: wrap;
+}
+
+.da
+{
+    display: flex;
+    position: relative;
+}
+/* .round-image>*
+{
+    border: 2px black solid;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+} */
+
+
+.round-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  
+  border: 2px solid #ca0707;
+}
+
+.round-image img:nth-child(2) {
+  transform: translate(2vw, 0px);
+}
+
+.round-image img:nth-child(3) {
+  transform: translate(4vw, 0px);
+}
+
+.button-partners
+{
+    padding: 1vh 1vw 1vh 1vw ;
+    background-color: white;
+    border:none;
+    align-items: center;
+    display: flex;
+    gap: 0.5vw;
+}
+
+
+
+
+.button-top-array
+{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.button-top-array>*
+{
+    display: flex;
+    gap: 1vw;
+}
+
+
+
+.array
+{
+    display:  block;
+    overflow-x: auto;
+    white-space: nowrap;
+    
+}
+
+.blassa
+{
+    display: flex;
+    gap:1vw;
+    align-items: center;
+}
+
+td ,th{
+    background-color: white;
+    padding:2vh 1.5vw;
+
+}
+
+.table-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+
+.tier1
+{
+    background-color:aquamarine;
+    padding: 0.5vh 1vw;
+    border: none;
+    border-radius: 25px;
+}
+
+.tier2
+{
+    background-color:rgb(127, 157, 255);
+    padding: 0.5vh 1vw;
+    border: none;
+    border-radius: 25px;
+}
+.tier3
+{
+    background-color:rgb(255, 204, 127);
+    padding: 0.5vh 1vw;
+    border: none;
+    border-radius: 25px;
+}
+
+
+
+@media (max-width:480px){
+    
+    body
+    {
+        background-color: #ca0707;
+        padding: 0;
+        position: relative;
+    }
+
+    .sidebar
+    {
+        z-index: 9999;
+        position: absolute;
+        left: -110%;
+        background-color: #ca0707;
+        height: 100vh;
+        /* display: none; */
+    }
+
+    
+
+
+    .partners
+    {
+        width: 100%;
+    }
+
 }
